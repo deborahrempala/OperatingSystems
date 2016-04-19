@@ -1,0 +1,40 @@
+#!/usr/local/bin/perl tcpserver.pl
+use DBI;
+ use DBD::mysql; use IO::Socket::INET;
+# HTTP HEADER
+print "Content-type: text/html \n\n";
+ $| = 1; my ($socket,$client_socket);
+ my ($peeraddress,$peerport);
+$socket = new IO::Socket::INET ( LocalHost => '198.110.216.168', LocalPort => '6063', Proto => 'tcp', Listen => 5, Reuse => 1 ) or
+die "ERROR in Socket Creation : $!\n";
+# print "SERVER Waiting for client connection on port 5011\n";
+while(1) { $client_socket = $socket->accept();
+$peer_address = $client_socket->peerhost();
+$peer_port = $client_socket->peerport();
+ print "Accepted New Client Connection From : $peer_address, $peer_port\n "; @data = <$client_socket>;
+foreach $info (@data) {
+     #Grab other params
+     ($Type,$CustFirst,$CustSecond,$itemName,$itemType,$Restricted,$Cost,$Quanity,$Approval) =
+     split (/ /,$info);
+     #print "$LastName\n";
+    open( FH, "<storeManagerItems.dat" );
+    my @Infos = <FH>;
+    close(FH );
+    open( FILE, ">>storeManagerItems.dat" );
+    foreach my $newInfo ( @Infos ) {
+     ($Type,$CustFirst,$CustSecond,$itemName,$itemType,$Restricted,$Cost,$Quanity,$Approval)  =
+     split (/,/,$info);
+        print FILE $newinfo unless ( $itemName =~ m/$ItemName/ && $Type eq "S" );
+    }
+    close( FILE );
+    #open File
+     open(FI, ">>storeManagerItems.dat");
+     print (FI "$Type,$CustFirst,$CustSecond,$itemName,$itemType,$Restricted,$Cost,$Quanity,$Approval\n");
+
+    #Close File
+    close(FI);
+   print "Order information sucessfully modified\n";
+}
+}
+$socket->close();
+                           

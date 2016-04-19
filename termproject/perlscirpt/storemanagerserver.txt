@@ -1,0 +1,29 @@
+#!/usr/local/bin/perl 
+#tcpserver.pl
+use DBI;
+ use DBD::mysql; 
+use IO::Socket::INET;
+# HTTP HEADER
+print "Content-type: text/html \n\n";
+ $| = 1; my ($socket,$client_socket);
+ my ($peeraddress,$peerport); 
+$socket = new IO::Socket::INET ( LocalHost => '198.110.216.168', LocalPort => '5011', Proto => 'tcp', Listen => 5, Reuse => 1 ) or 
+die "ERROR in Socket Creation : $!\n";
+ print "SERVER Waiting for client connection on port 5011\n"; 
+while(1) { $client_socket = $socket->accept(); 
+$peer_address = $client_socket->peerhost(); 
+$peer_port = $client_socket->peerport();
+ print "Accepted New Client Connection From : $peer_address, $peer_port\n "; 
+@data = <$client_socket>; 
+foreach $info (@data) {
+     ($Variable,$Name,$Type,$Restricted,$Cost,$Quanity,$Approval,$Something,$somethingelse,$somethingmore) =
+     split (/,/,$info);
+   
+# adding to a text file
+print "Writing to Text File\n"; 
+open (FH,">>storeManagerItems.dat"); 
+print FH "$Variable,$Name,$Type,$Restricted,$Cost,$Quanity,$Approval,$Something,$somethingelse,$somethingmore\n"; 
+close (FH);
+}
+}
+$socket->close();

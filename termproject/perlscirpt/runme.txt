@@ -1,0 +1,15 @@
+#!/usr/local/bin/perl
+
+use strict;
+
+use warnings;
+
+do `perl storemanagerserver.txt`;
+
+do `perl empdelete.txt`;
+
+do `perl empmodify.txt`;
+
+do `perl storedelete.txt`;
+
+do `perl itemdelete.txt`;
