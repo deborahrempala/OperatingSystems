@@ -1,0 +1,21 @@
+c:\users\deborah\documents\visual studio 2015\Projects\server1\server1\bin\Debug\server1.exe.config
+c:\users\deborah\documents\visual studio 2015\Projects\server1\server1\obj\Debug\server1.csprojResolveAssemblyReference.cache
+c:\users\deborah\documents\visual studio 2015\Projects\server1\server1\obj\Debug\server1.Form1.resources
+c:\users\deborah\documents\visual studio 2015\Projects\server1\server1\obj\Debug\server1.Properties.Resources.resources
+c:\users\deborah\documents\visual studio 2015\Projects\server1\server1\obj\Debug\server1.csproj.GenerateResource.Cache
+c:\users\deborah\documents\visual studio 2015\Projects\server1\server1\bin\Debug\server1.exe
+c:\users\deborah\documents\visual studio 2015\Projects\server1\server1\bin\Debug\server1.pdb
+c:\users\deborah\documents\visual studio 2015\Projects\server1\server1\obj\Debug\server1.exe
+c:\users\deborah\documents\visual studio 2015\Projects\server1\server1\obj\Debug\server1.pdb
+K:\Spring2016\OperatingSystems\assignmet3\visualstudio\server1\bin\Debug\server1.exe.config
+K:\Spring2016\OperatingSystems\assignmet3\visualstudio\server1\obj\Debug\server1.exe
+K:\Spring2016\OperatingSystems\assignmet3\visualstudio\server1\obj\Debug\server1.pdb
+E:\Spring2016\OperatingSystems\assignmet3\visualstudio\server1\bin\Debug\server1.exe.config
+E:\Spring2016\OperatingSystems\assignmet3\visualstudio\server1\obj\Debug\server1.exe
+E:\Spring2016\OperatingSystems\assignmet3\visualstudio\server1\obj\Debug\server1.pdb
+E:\Spring2016\OperatingSystems\assignmet3\visualstudio\server1\bin\Debug\server1.exe
+E:\Spring2016\OperatingSystems\assignmet3\visualstudio\server1\bin\Debug\server1.pdb
+E:\Spring2016\OperatingSystems\assignmet3\visualstudio\server1\obj\Debug\server1.csprojResolveAssemblyReference.cache
+E:\Spring2016\OperatingSystems\assignmet3\visualstudio\server1\obj\Debug\server1.Form1.resources
+E:\Spring2016\OperatingSystems\assignmet3\visualstudio\server1\obj\Debug\server1.Properties.Resources.resources
+E:\Spring2016\OperatingSystems\assignmet3\visualstudio\server1\obj\Debug\server1.csproj.GenerateResource.Cache
